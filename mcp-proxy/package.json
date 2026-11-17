@@ -1,0 +1,17 @@
+{
+  "name": "antigravity-outsystems-mcp-proxy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local stdio proxy (mcp-remote) that connects Antigravity to the OutSystems ODC MCP server with OAuth sign-in.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "mcp-remote": "0.16.6"
+  },
+  "overrides": {
+    "object-inspect": "1.13.4",
+    "encodeurl": "2.0.1"
+  }
+}
