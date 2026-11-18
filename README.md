@@ -10,6 +10,38 @@ Instala o servidor **MCP da OutSystems Developer Cloud (ODC)** no **Antigravity*
 
 Nenhuma credencial, Client ID ou Client Secret é necessário: o login é feito no navegador com o seu próprio usuário OutSystems.
 
+### Instalando o Node.js
+
+Se `node --version` não funcionar, ou mostrar uma versão menor que 20, instale a versão LTS:
+
+**Windows** (PowerShell):
+```powershell
+winget install --id OpenJS.NodeJS.LTS -e
+```
+
+**macOS** ([Homebrew](https://brew.sh)):
+```bash
+brew install node@22
+brew link --overwrite node@22
+```
+
+**Linux** (via [nvm](https://github.com/nvm-sh/nvm), sem precisar de `sudo`):
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+source ~/.nvm/nvm.sh
+nvm install --lts
+```
+
+Se preferir, use o instalador oficial em https://nodejs.org (versão LTS).
+
+Depois de instalar, **feche e abra o terminal** e confira:
+```bash
+node --version   # v20 ou superior
+npm --version
+```
+
+> Se você atualizar ou mover o Node.js depois, rode `node install.mjs` de novo. O caminho do `node` fica gravado na configuração do Antigravity.
+
 ## Instalação
 
 ```bash
